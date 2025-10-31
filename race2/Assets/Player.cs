@@ -89,12 +89,12 @@ public class Player : MonoBehaviour
             // ジャンプ軸など別途定義しているなら使う（ここではキー扱い）
             // 便宜的にUnityの"Jump"や"Jump2"があるなら使うが、無ければGetKeyDown fallback
             if (playerId == 1) return Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump");
-            return Input.GetKeyDown(KeyCode.RightShift) || Input.GetButtonDown("Jump2");
+            return Input.GetKeyDown(KeyCode.K) || Input.GetButtonDown("Jump2");
         }
         else
         {
             if (playerId == 1) return Input.GetKeyDown(KeyCode.Space);
-            return Input.GetKeyDown(KeyCode.RightShift);
+            return Input.GetKeyDown(KeyCode.K);
         }
     }
 
